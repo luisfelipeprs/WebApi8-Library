@@ -1,0 +1,292 @@
+[
+  {
+    "ContainingType": "WebApi8_Library.Controllers.AuthorController",
+    "Method": "UpdateAuthor",
+    "RelativePath": "api/Author/{idAuthor}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAuthor",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "authorUpdateDto",
+        "Type": "WebApi8_Library.Dto.Author.AuthorUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi8_Library.Controllers.AuthorController",
+    "Method": "DeleteAuthor",
+    "RelativePath": "api/Author/{idAuthor}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAuthor",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi8_Library.Controllers.AuthorController",
+    "Method": "AuthorById",
+    "RelativePath": "api/Author/AuthorById/{idAuthor}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAuthor",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_Library.Models.ResponseModel\u00601[[WebApi8_Library.Models.AuthorModel, WebApi8-Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_Library.Controllers.AuthorController",
+    "Method": "AuthorByIdBook",
+    "RelativePath": "api/Author/AuthorByIdBook/{idBook}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idBook",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_Library.Models.ResponseModel\u00601[[WebApi8_Library.Models.AuthorModel, WebApi8-Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_Library.Controllers.AuthorController",
+    "Method": "CreateAuthor",
+    "RelativePath": "api/Author/CreateAuthor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authorCreateDto",
+        "Type": "WebApi8_Library.Dto.Author.AuthorCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_Library.Models.ResponseModel\u00601[[WebApi8_Library.Models.AuthorModel, WebApi8-Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_Library.Controllers.AuthorController",
+    "Method": "ListAuthors",
+    "RelativePath": "api/Author/ListAuthors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_Library.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebApi8_Library.Models.AuthorModel, WebApi8-Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_Library.Controllers.BookController",
+    "Method": "BookById",
+    "RelativePath": "api/Book/BookById/{idBook}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idBook",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_Library.Models.ResponseModel\u00601[[WebApi8_Library.Models.BookModel, WebApi8-Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_Library.Controllers.BookController",
+    "Method": "BooksByAuthor",
+    "RelativePath": "api/Book/BooksByAuthor/{idAuthor}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAuthor",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_Library.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebApi8_Library.Models.BookModel, WebApi8-Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_Library.Controllers.BookController",
+    "Method": "CreateBook",
+    "RelativePath": "api/Book/CreateBook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookCreateDto",
+        "Type": "WebApi8_Library.Dto.Book.BookCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_Library.Models.ResponseModel\u00601[[WebApi8_Library.Models.BookModel, WebApi8-Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_Library.Controllers.BookController",
+    "Method": "DeleteBook",
+    "RelativePath": "api/Book/DeleteBook/{idBook}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idBook",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_Library.Models.ResponseModel\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_Library.Controllers.BookController",
+    "Method": "ListBooks",
+    "RelativePath": "api/Book/ListBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_Library.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebApi8_Library.Models.BookModel, WebApi8-Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_Library.Controllers.BookController",
+    "Method": "UpdateBook",
+    "RelativePath": "api/Book/UpdateBook/{idBook}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idBook",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "bookUpdateDto",
+        "Type": "WebApi8_Library.Dto.Book.BookUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_Library.Models.ResponseModel\u00601[[WebApi8_Library.Models.BookModel, WebApi8-Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
